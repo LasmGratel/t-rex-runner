@@ -1,16 +1,36 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
-  <title i18n-content="title"></title>
-  <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
+    <title>Dinosaur Game from Google Chrome remake</title>
+    <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+    <link href="//cdn.bootcss.com/material-design-icons/3.0.1/iconfont/material-icons.min.css" rel="stylesheet">
+    <script src="//cdn.bootcss.com/materialize/0.97.7/js/materialize.min.js"></script>
+    <link href="//cdn.bootcss.com/materialize/0.97.7/css/materialize.min.css" rel="stylesheet">
+    <style>
+    body {
+        background-color: #f7f7f7;
+        font-family: "Segoe UI", Arial, "Microsoft Yahei", sans-serif;
+        font-size: 75%;
+    }
+    </style>
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body id="t" class="offline">
-  <div id="main-frame-error" class="interstitial-wrapper">
-    <div id="main-content">
+<nav role="navigation" class="navbar light-blue lighten-2 hoverable">
+    <div class="nav-wrapper">
+        <a href="#" class="brand-logo center">T-REX GAME</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="//lasmgratel.github.io">回到首页</a></li>
+        </ul>
     </div>
-  </div>
+</nav>
+<div class="section no-pad-bot">
+    <div class="container">
+        <div id="main-frame-error" class="interstitial-wrapper"></div>
+    </div>
+</div>
   <div id="offline-resources">
     <img id="offline-resources-1x" src="assets/offline-sprite-1x.png">
     <img id="offline-resources-2x" src="assets/offline-sprite-2x.png">
@@ -22,4 +42,31 @@
   </div>
   <script src="js/game.js"></script>
 </body>
+<footer class="page-footer light-blue lighten-4">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">简介</h5>
+                <p class="grey-text text-lighten-4">这是一个去掉了脚和有隐藏功能的小恐龙龙~~~</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">友情链接</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="https://github.com/wayou/t-rex-runner">原汁原味源代码</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 Lasm Gratel
+            <p class="right text-center">
+                本作品采用<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">知识共享署名-相同方式共享 4.0 国际许可协议</a>进行许可。
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
+                    <img alt="知识共享许可协议" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" />
+                </a>
+            </p>
+        </div>
+    </div>
+</footer>
 </html>
